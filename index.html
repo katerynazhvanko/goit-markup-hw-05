@@ -13,7 +13,7 @@
 </head>
 <body>
   <header class="header">
-    <div class="container">
+    <div class="container header-box">
     <nav class="nav-item">
       <a href="./" class="emblem header-logo"><span class="web-logo">Web</span><span class="studio-logo">Studio</span></a>
     <ul class="site-nav">
@@ -34,7 +34,7 @@
     <section class="banner">
       <div class="container">
       <h1 class="banner-title">Ефективні рішення для вашого бізнесу</h1>
-      <button type="button" class="button text-button">Замовити послугу</button>
+      <button type="button" class="button text-button" data-modal-open>Замовити послугу</button>
     </div>
     </section>
   <!--Особливості-->
@@ -80,19 +80,19 @@
     <ul class="section-group">
       <li class="section-item">
         <div class="section-addition">
-        <img src="./image/box1.jpg" alt="людина друкує на клавіатурі" width="370" height="294">
+        <img src="./image/box1.jpg" alt="людина друкує на клавіатурі" width="370" height="294" class="image">
         <div class="section-label"><p class="section-label-text">ДЕКСТОПНІ ДОДАТКИ</p></div>
       </div>
       </li>
       <li class="section-item">
         <div class="section-addition">
-        <img src="./image/box2.jpg" alt="людина тримає телефон в руках" width="370" height="294">
+        <img src="./image/box2.jpg" alt="людина тримає телефон в руках" width="370" height="294" class="image">
         <div class="section-label"><p class="section-label-text">МОБІЛЬНІ ДОДАТКИ</p></div>
         </div>
       </li>
       <li class="section-item">
         <div class="section-addition">
-        <img src="./image/box3.jpg" alt="людина тримає планшет і стилус" width="370" height="294">
+        <img src="./image/box3.jpg" alt="людина тримає планшет і стилус" width="370" height="294" class="image">
         <div class="section-label"><p class="section-label-text">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p></div>
         </div>
       </li>
@@ -352,5 +352,10 @@
       </div>
     </div>
   </footer>
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal"><button data-modal-close class="modal-button"><svg width="11" height="11"><use href="./image/sprite.svg#icon-close"></use>
+  </svg></button></div>
+</div>
+<script src="./js/modal.js"></script>
 </body>
 </html>
